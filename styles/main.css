@@ -1,0 +1,17 @@
+:root {
+  --color-primary: hsl(0, 91%, 71%);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 32px;
+  color: var(--color-primary);
+}
+
+h2 {
+  font-size: 24px;
+}
