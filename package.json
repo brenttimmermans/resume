@@ -1,0 +1,96 @@
+{
+  "name": "resume",
+  "version": "0.1.0",
+  "description": "Hi 👋, I'm Brent and this is my resume!",
+  "author": "Brent-T <brenttimmermans7@gmail.com>",
+  "license": "ISC",
+  "source": "src/index.html",
+  "scripts": {
+    "build": "parcel build",
+    "dev": "parcel",
+    "lint": "eslint --ext .jsx,.js,.tsx,.ts src",
+    "lint:fix": "prettier --loglevel warn --write \"src/**/*.+(js|ts|tsx|jsx|json)\" && yarn lint --fix",
+    "typecheck": "tsc --noEmit",
+    "test": "yarn lint && yarn typecheck"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@emotion/babel-plugin": "^11.7.2",
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.10.2",
+    "@typescript-eslint/parser": "^5.10.2",
+    "eslint": "^8.8.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react": "^7.28.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.3",
+    "parcel": "^2.2.1",
+    "prettier": "^2.5.1"
+  },
+  "babel": {
+    "plugins": [
+      "@emotion/babel-plugin"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && yarn typecheck"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "prettier --loglevel warn --write",
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es2021": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended",
+      "prettier"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+    },
+    "plugins": [
+      "react",
+      "@typescript-eslint"
+    ]
+  },
+  "prettier": {
+    "arrowParens": "avoid",
+    "bracketSameLine": false,
+    "bracketSpacing": true,
+    "embeddedLanguageFormatting": "auto",
+    "endOfLine": "lf",
+    "htmlWhitespaceSensitivity": "css",
+    "insertPragma": false,
+    "jsxSingleQuote": false,
+    "printWidth": 80,
+    "proseWrap": "always",
+    "quoteProps": "as-needed",
+    "requirePragma": false,
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "all",
+    "useTabs": false
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}
