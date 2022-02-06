@@ -1,1 +1,1 @@
-# Just my resume (for now)
+# Hi 👋, I'm Brent and this is my resume!
