@@ -26,4 +26,6 @@ const Wrapper = styled.article`
   }
 
   padding: 70px 25px;
+  max-width: 720px;
+  margin: 0 auto;
 `
