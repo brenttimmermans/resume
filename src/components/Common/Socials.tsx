@@ -29,11 +29,9 @@ export default function Socials() {
 }
 
 const Wrapper = styled.section`
-  a {
-    display: inline-block;
-    height: 30px;
-    width: 30px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   a + a {
     margin-left: var(--spacing-M);
@@ -47,6 +45,6 @@ const SocialIcon = ({ icon, link, alt }) => (
 )
 
 const StyledIcon = styled.img`
-  height: 30px;
-  width: 30px;
+  max-height: 30px;
+  max-width: 30px;
 `
