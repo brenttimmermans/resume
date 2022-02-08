@@ -27,9 +27,9 @@ export default function AboutMe() {
       <p>
         <Bold>Problem-solving team player</Bold>. <Bold>Eager to learn</Bold> on
         a daily basis from <Bold>peers &amp; mentors</Bold>, keeping{' '}
-        <Bold>up to date</Bold> with the latest advancements on the web.{' '}
-        <Bold>Motivation/dedication</Bold>, <Bold>structure</Bold> and{' '}
-        <Bold>efficiency</Bold> are my essential values in life.
+        <Bold>up to date</Bold> with the latest advancements on the web. Working
+        towards my goals in with <Bold>dedication</Bold>, <Bold>structure</Bold>{' '}
+        and <Bold>efficiency</Bold> is what I do.
       </p>
     </article>
   )
