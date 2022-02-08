@@ -9,7 +9,7 @@ export default function Technologies() {
         <Bold>HTML, CSS &amp; JavaScript</Bold>.
       </p>
       <p>
-        I have built and maintained large scale enterprise applications with
+        I have built and maintained large scale enterprise applications with{' '}
         <Bold>React</Bold> making use of <Bold>hooks</Bold>,{' '}
         <Bold>Styled Components/CSS-in-JS</Bold>, <Bold>Typescript</Bold> &amp;{' '}
         <Bold>webpack</Bold> as well as large scale backend service with{' '}
