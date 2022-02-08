@@ -21,6 +21,7 @@ body {
   font-size: var(--font-size-M);
   line-height: 1.4;
   font-weight: var(--font-weight-regular);
+  color: var(--color-text);
 }
 
 h1,
