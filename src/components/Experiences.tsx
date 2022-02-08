@@ -2,11 +2,13 @@ import { css } from '@emotion/react'
 import styled from 'styled-components'
 
 import { H2, H3, Subtle } from './Common/Text'
+import CircularImage from './Common/Image'
 
 import WaylayLogo from '../assets/images/companies/waylay.jpg'
 import SmallTownHeroesLogo from '../assets/images/companies/smalltownheroes.jpg'
 import OdiseeLogo from '../assets/images/companies/odisee.png'
-import CircularImage from './Common/Image'
+
+const ICON_SIZE = 50
 
 export default function Experiences() {
   return (
@@ -16,7 +18,11 @@ export default function Experiences() {
         title="Fullstack JavaScript Engineer @ Waylay"
         period="September 2017 - Present"
         logo={
-          <CircularImage src={WaylayLogo} alt="Waylay company logo" size={50} />
+          <CircularImage
+            src={WaylayLogo}
+            alt="Waylay company logo"
+            size={ICON_SIZE}
+          />
         }
       />
       <ExperienceItem
@@ -26,7 +32,7 @@ export default function Experiences() {
           <CircularImage
             src={SmallTownHeroesLogo}
             alt="Small Town Heroes company logo"
-            size={50}
+            size={ICON_SIZE}
           />
         }
       />
@@ -34,7 +40,11 @@ export default function Experiences() {
         title="Elektronice-ICT - Web &amp; Mobile development @ Odisee"
         period="2014 - 2017"
         logo={
-          <CircularImage src={OdiseeLogo} alt="Odisee school logo" size={50} />
+          <CircularImage
+            src={OdiseeLogo}
+            alt="Odisee school logo"
+            size={ICON_SIZE}
+          />
         }
       />
     </Wrapper>
@@ -48,13 +58,7 @@ const Wrapper = styled.article`
 `
 
 const ExperienceItem = ({ title, period, logo }) => (
-  <section
-    css={css`
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    `}
-  >
+  <ExperienceItemWrapper>
     <div
       css={css`
         margin-right: var(--spacing-S);
@@ -76,5 +80,11 @@ const ExperienceItem = ({ title, period, logo }) => (
       </Subtle>
     </div>
     {logo}
-  </section>
+  </ExperienceItemWrapper>
 )
+
+const ExperienceItemWrapper = styled.section`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`
