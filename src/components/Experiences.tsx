@@ -8,14 +8,14 @@ import WaylayLogo from '../assets/images/companies/waylay.jpg'
 import SmallTownHeroesLogo from '../assets/images/companies/smalltownheroes.jpg'
 import OdiseeLogo from '../assets/images/companies/odisee.png'
 
-const ICON_SIZE = 50
+const ICON_SIZE = 40
 
 export default function Experiences() {
   return (
     <Wrapper>
       <H2>Experiences</H2>
       <ExperienceItem
-        title="Fullstack JavaScript Engineer @ Waylay"
+        title="Fullstack JavaScript Developer @ Waylay"
         period="September 2017 - Present"
         logo={
           <CircularImage
@@ -26,7 +26,7 @@ export default function Experiences() {
         }
       />
       <ExperienceItem
-        title="Intern Frontend Developer @ Small"
+        title="Intern Frontend Developer @ Small Town Heroes"
         period="February 2017 - May 2017"
         logo={
           <CircularImage

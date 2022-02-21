@@ -5,7 +5,7 @@ export default function Technologies() {
     <article>
       <H2>Technologies</H2>
       <p>
-        Profound interest and excellent knowledge of the web fundaments;{' '}
+        Profound interest and excellent knowledge of the web fundamentals:{' '}
         <Bold>HTML, CSS &amp; JavaScript</Bold>.
       </p>
       <p>
@@ -17,10 +17,10 @@ export default function Technologies() {
         <Bold>Jest testing</Bold>).
       </p>
       <p>
-        Rounding up I have professional experience using/working with{' '}
+        Furthermore I have professional experience using/working with{' '}
         <Bold>Git</Bold>, <Bold>CI/CD</Bold>, <Bold>Figma</Bold>,{' '}
         <Bold>code testing</Bold>, <Bold>npm</Bold> &amp;{' '}
-        <Bold>various SQL/NoSQL databases</Bold>.
+        <Bold>a variety of SQL/NoSQL databases</Bold>.
       </p>
     </article>
   )
