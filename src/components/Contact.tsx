@@ -1,8 +1,8 @@
 import { css } from '@emotion/react'
 
-import Socials from './Common/Socials'
-import { H2, TextLink } from './Common/Text'
-import { LinkedinLink } from '../util/links'
+import Socials from '~/src/components/Common/Socials'
+import { H2, TextLink } from '~/src/components/Common/Text'
+import { LinkedinLink } from '~/src/util/links'
 
 export default function Contact() {
   return (
