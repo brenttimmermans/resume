@@ -1,4 +1,4 @@
-import { H2, Bold } from './Common/Text'
+import { H2, Bold } from '~/src/components/Common/Text'
 
 export default function Technologies() {
   return (

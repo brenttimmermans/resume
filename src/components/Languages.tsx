@@ -1,12 +1,12 @@
-import { H2, H3, Subtle } from './Common/Text'
 import styled from 'styled-components'
 import { css } from '@emotion/react'
 
-import { CircularImage } from './Common/Image'
+import { H2, H3, Subtle } from '~/src/components/Common/Text'
+import { CircularImage } from '~/src/components/Common/Image'
 
-import DutchFlagIcon from '../assets/images/flags/dutch.png'
-import EnglishFlagIcon from '../assets/images/flags/english.png'
-import FrenchFlagIcon from '../assets/images/flags/french.png'
+import DutchFlagIcon from '~/src/assets/images/flags/dutch.png'
+import EnglishFlagIcon from '~/src/assets/images/flags/english.png'
+import FrenchFlagIcon from '~/src/assets/images/flags/french.png'
 
 export default function Languages() {
   return (

@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 
-import Header from './Header'
-import AboutMe from './AboutMe'
-import Experiences from './Experiences'
-import Technologies from './Technologies'
-import Languages from './Languages'
-import Contact from './Contact'
+import Header from '~/src/components/Header'
+import AboutMe from '~/src/components/AboutMe'
+import Experiences from '~/src/components/Experiences'
+import Technologies from '~/src/components/Technologies'
+import Languages from '~/src/components/Languages'
+import Contact from '~/src/components/Contact'
 
-import BgTexture from '../assets/images/texture.svg'
+import BgTexture from '~/src/assets/images/texture.svg'
 
 export default function Resume() {
   return (

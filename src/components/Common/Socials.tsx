@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 
-import { GithubLink, LinkedinLink, TwitterLink } from '../../util/links'
+import { GithubLink, LinkedinLink, TwitterLink } from '~/src/util/links'
 
-import GithubLogo from '../../assets/images/socials/github.png'
-import LinkedinLogo from '../../assets/images/socials/linkedin.png'
-import TwitterLogo from '../../assets/images/socials/twitter.png'
+import GithubLogo from '~/src/assets/images/socials/github.png'
+import LinkedinLogo from '~/src/assets/images/socials/linkedin.png'
+import TwitterLogo from '~/src/assets/images/socials/twitter.png'
 
 export default function Socials() {
   return (

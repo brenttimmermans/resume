@@ -1,10 +1,10 @@
-import ReactDOM from "react-dom";
-import { App } from "./App";
+import ReactDOM from 'react-dom'
+import { App } from '~/src/App'
 
-import "./styles/normalize.css";
-import "./styles/fonts.css";
-import "./styles/main.css";
+import '~/src/styles/normalize.css'
+import '~/src/styles/fonts.css'
+import '~/src/styles/main.css'
 
-const app = document.getElementById("app");
+const app = document.getElementById('app')
 
-ReactDOM.render(<App />, app);
+ReactDOM.render(<App />, app)

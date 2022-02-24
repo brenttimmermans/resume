@@ -1,4 +1,4 @@
-import Resume from './components/Resume'
+import Resume from '~/src/components/Resume'
 
 export function App() {
   return <Resume />
