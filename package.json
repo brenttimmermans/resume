@@ -10,6 +10,7 @@
     "dev": "parcel",
     "lint": "eslint --ext .jsx,.js,.tsx,.ts src",
     "lint:fix": "prettier --loglevel warn --write \"src/**/*.+(js|ts|tsx|jsx|json)\" && yarn lint --fix",
+    "prepare": "husky install",
     "typecheck": "tsc --noEmit",
     "test": "yarn lint && yarn typecheck"
   },
@@ -43,16 +44,10 @@
       "@emotion/babel-plugin"
     ]
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged && yarn typecheck"
-    }
-  },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
       "prettier --loglevel warn --write",
-      "eslint --fix",
-      "git add"
+      "eslint --fix"
     ]
   },
   "eslintConfig": {
