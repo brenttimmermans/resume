@@ -4,7 +4,7 @@ import { css } from '@emotion/react'
 import { H1, TextLink } from './Common/Text'
 import CircularImage from './Common/Image'
 import Socials from './Common/Socials'
-import { InstagramLink } from '../links'
+import { InstagramLink } from '../util/links'
 
 import ProfilePicture from '../assets/images/profile.jpeg'
 import WaveEmoji from '../assets/images/wave.png'

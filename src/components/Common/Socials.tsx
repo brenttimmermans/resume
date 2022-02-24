@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { GithubLink, LinkedinLink, TwitterLink } from '../../links'
+import { GithubLink, LinkedinLink, TwitterLink } from '../../util/links'
 
 import GithubLogo from '../../assets/images/socials/github.png'
 import LinkedinLogo from '../../assets/images/socials/linkedin.png'
