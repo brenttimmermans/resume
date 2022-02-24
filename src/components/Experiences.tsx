@@ -57,7 +57,13 @@ const Wrapper = styled.article`
   }
 `
 
-const ExperienceItem = ({ title, period, logo }) => (
+interface IExperienceItemProps {
+  title: string
+  period: string
+  logo: React.ReactNode
+}
+
+const ExperienceItem = ({ title, period, logo }: IExperienceItemProps) => (
   <ExperienceItemWrapper>
     <div
       css={css`

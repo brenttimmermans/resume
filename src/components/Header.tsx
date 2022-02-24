@@ -29,7 +29,7 @@ export default function Header() {
             flex-wrap: wrap;
           `}
         >
-          <H1>Hi! I'm Brent&nbsp;Timmermans</H1>
+          <H1>Hi! I&apos;m Brent&nbsp;Timmermans</H1>
           <Image
             src={WaveEmoji}
             alt="Waving hand emoji"

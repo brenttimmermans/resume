@@ -38,7 +38,13 @@ const Wrapper = styled.section`
   }
 `
 
-const SocialIcon = ({ icon, link, alt }) => (
+interface ISocialIconProps {
+  icon: string
+  link: string
+  alt: string
+}
+
+const SocialIcon = ({ icon, link, alt }: ISocialIconProps) => (
   <a href={link}>
     <StyledIcon src={icon} alt={alt} />
   </a>
