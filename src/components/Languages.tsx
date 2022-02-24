@@ -2,7 +2,7 @@ import { H2, H3, Subtle } from './Common/Text'
 import styled from 'styled-components'
 import { css } from '@emotion/react'
 
-import CircularImage from './Common/Image'
+import { CircularImage } from './Common/Image'
 
 import DutchFlagIcon from '../assets/images/flags/dutch.png'
 import EnglishFlagIcon from '../assets/images/flags/english.png'

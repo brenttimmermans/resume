@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { css } from '@emotion/react'
 
 import { H1, TextLink } from './Common/Text'
-import CircularImage from './Common/Image'
+import { Image, CircularImage } from './Common/Image'
 import Socials from './Common/Socials'
 import { InstagramLink } from '../util/links'
 
@@ -30,7 +30,7 @@ export default function Header() {
           `}
         >
           <H1>Hi! I'm Brent&nbsp;Timmermans</H1>
-          <CircularImage
+          <Image
             src={WaveEmoji}
             alt="Waving hand emoji"
             size={40}
