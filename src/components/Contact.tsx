@@ -2,7 +2,7 @@ import { css } from '@emotion/react'
 
 import Socials from './Common/Socials'
 import { H2, TextLink } from './Common/Text'
-import { LinkedinLink } from '../links'
+import { LinkedinLink } from '../util/links'
 
 export default function Contact() {
   return (
