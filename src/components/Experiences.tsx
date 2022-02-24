@@ -2,7 +2,7 @@ import { css } from '@emotion/react'
 import styled from 'styled-components'
 
 import { H2, H3, Subtle } from './Common/Text'
-import CircularImage from './Common/Image'
+import { CircularImage } from './Common/Image'
 
 import WaylayLogo from '../assets/images/companies/waylay.jpg'
 import SmallTownHeroesLogo from '../assets/images/companies/smalltownheroes.jpg'

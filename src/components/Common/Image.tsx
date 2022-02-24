@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 
-const CircularImage = styled.img<{ size: number }>`
+export const Image = styled.img<{ size: number }>`
   object-fit: cover;
-  border-radius: 50%;
   width: ${props => props.size ?? 30}px;
   height: ${props => props.size ?? 30}px;
 `
 
-export default CircularImage
+export const CircularImage = styled(Image)`
+  border-radius: 50%;
+`
