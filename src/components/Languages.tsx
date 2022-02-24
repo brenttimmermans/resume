@@ -13,15 +13,15 @@ export default function Languages() {
     <Wrapper>
       <H2>Languages</H2>
       <LanguageItem
-        language="Dutch"
-        level="C2 · Native tongue"
+        language={Language.Dutch}
+        level={CEFR_Level.C2}
         icon={
           <CircularImage src={DutchFlagIcon} alt="Dutch flag icon" size={30} />
         }
       />
       <LanguageItem
-        language="English"
-        level="C1 · Advanced level"
+        language={Language.English}
+        level={CEFR_Level.C1}
         icon={
           <CircularImage
             src={EnglishFlagIcon}
@@ -31,8 +31,8 @@ export default function Languages() {
         }
       />
       <LanguageItem
-        language="French"
-        level="B1 · Intermediate level"
+        language={Language.French}
+        level={CEFR_Level.B1}
         icon={
           <CircularImage
             src={FrenchFlagIcon}
@@ -51,7 +51,25 @@ const Wrapper = styled.article`
   }
 `
 
-const LanguageItem = ({ icon, language, level }) => (
+enum Language {
+  Dutch = 'Dutch',
+  French = 'French',
+  English = 'English',
+}
+
+enum CEFR_Level {
+  C2 = 'C2 · Native tongue',
+  C1 = 'C1 · Advanced level',
+  B1 = 'B1 · Intermediate level',
+}
+
+interface ILanguageItemProps {
+  language: Language
+  level: CEFR_Level
+  icon: React.ReactNode
+}
+
+const LanguageItem = ({ language, level, icon }: ILanguageItemProps) => (
   <section
     css={css`
       display: flex;
