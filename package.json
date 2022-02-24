@@ -63,6 +63,7 @@
     "extends": [
       "eslint:recommended",
       "plugin:react/recommended",
+      "plugin:react/jsx-runtime",
       "plugin:@typescript-eslint/recommended",
       "prettier"
     ],
@@ -78,8 +79,10 @@
       "react",
       "@typescript-eslint"
     ],
-    "rules": {
-      "react/react-in-jsx-scope": "off"
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
     }
   },
   "prettier": {
