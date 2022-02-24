@@ -26,7 +26,7 @@ export default function Resume() {
 
 const CONTENT_PADDING = 30
 const MIN_WIDTH_FOR_PATTERN = 940
-const BLUR_RADIUS = 60
+const BLUR_RADIUS = 30
 
 const Background = styled.div`
   @media (min-width: ${MIN_WIDTH_FOR_PATTERN}px) {
@@ -50,8 +50,8 @@ const Wrapper = styled.article`
     );
 
     // Add additional padding to compensate for blur
-    padding-left: calc(${CONTENT_PADDING}px + ${BLUR_RADIUS}px);
-    padding-right: calc(${CONTENT_PADDING}px + ${BLUR_RADIUS}px);
+    padding-left: ${CONTENT_PADDING + BLUR_RADIUS}px;
+    padding-right: ${CONTENT_PADDING + BLUR_RADIUS}px;
   }
 
   article + article {
