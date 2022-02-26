@@ -70,25 +70,14 @@ interface ILanguageItemProps {
 }
 
 const LanguageItem = ({ language, level, icon }: ILanguageItemProps) => (
-  <section
-    css={css`
-      display: flex;
-      align-items: center;
-    `}
-  >
+  <LanguageItemWrapper>
     {icon}
     <div
       css={css`
         margin-left: var(--spacing-M);
       `}
     >
-      <H3
-        css={css`
-          margin: 0;
-        `}
-      >
-        {language}
-      </H3>
+      <H3>{language}</H3>
       <Subtle
         css={css`
           margin: 0;
@@ -97,5 +86,10 @@ const LanguageItem = ({ language, level, icon }: ILanguageItemProps) => (
         {level}
       </Subtle>
     </div>
-  </section>
+  </LanguageItemWrapper>
 )
+
+const LanguageItemWrapper = styled.section`
+  display: flex;
+  align-items: center;
+`
