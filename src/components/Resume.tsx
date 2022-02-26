@@ -44,7 +44,7 @@ const Wrapper = styled.article`
   @media (min-width: ${MIN_WIDTH_FOR_PATTERN}px) {
     background: linear-gradient(
       to right,
-      rgba(0, 0, 0, 0) 0%,
+      rgba(255, 255, 255, 0) 0%,
       rgba(240, 240, 240, 1) ${BLUR_RADIUS}px,
       rgba(255, 255, 255, 1) ${BLUR_RADIUS}px,
       rgba(255, 255, 255, 1) calc(100% - ${BLUR_RADIUS}px),
