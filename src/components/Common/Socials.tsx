@@ -2,28 +2,22 @@ import styled from 'styled-components'
 
 import { GithubLink, LinkedinLink, TwitterLink } from '~/src/util/links'
 
-import GithubLogo from '~/src/assets/images/socials/github.png'
-import LinkedinLogo from '~/src/assets/images/socials/linkedin.png'
-import TwitterLogo from '~/src/assets/images/socials/twitter.png'
+import GithubLogo from '~/src/assets/images/socials/github.svg'
+import LinkedinLogo from '~/src/assets/images/socials/linkedin.svg'
+import TwitterLogo from '~/src/assets/images/socials/twitter.svg'
 
 export default function Socials() {
   return (
     <Wrapper>
-      <SocialIcon
-        icon={GithubLogo}
-        link={GithubLink}
-        alt="Github social link"
-      />
-      <SocialIcon
-        icon={LinkedinLogo}
-        link={LinkedinLink}
-        alt="Linkedin social link"
-      />
-      <SocialIcon
-        icon={TwitterLogo}
-        link={TwitterLink}
-        alt="Twitter social link"
-      />
+      <StyledLink href={GithubLink}>
+        <GithubLogo />
+      </StyledLink>
+      <StyledLink href={LinkedinLink}>
+        <LinkedinLogo />
+      </StyledLink>
+      <StyledLink href={TwitterLink}>
+        <TwitterLogo />
+      </StyledLink>
     </Wrapper>
   )
 }
@@ -38,19 +32,12 @@ const Wrapper = styled.section`
   }
 `
 
-interface ISocialIconProps {
-  icon: string
-  link: string
-  alt: string
-}
-
-const SocialIcon = ({ icon, link, alt }: ISocialIconProps) => (
-  <a href={link}>
-    <StyledIcon src={icon} alt={alt} />
-  </a>
-)
-
-const StyledIcon = styled.img`
+const StyledLink = styled.a`
+  display: inline-flex;
   max-height: 30px;
   max-width: 30px;
+
+  path {
+    fill: var(--color-text);
+  }
 `
