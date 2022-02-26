@@ -70,13 +70,7 @@ const ExperienceItem = ({ title, period, logo }: IExperienceItemProps) => (
         margin-right: var(--spacing-S);
       `}
     >
-      <H3
-        css={css`
-          margin: 0;
-        `}
-      >
-        {title}
-      </H3>
+      <H3>{title}</H3>
       <Subtle
         css={css`
           margin: 0;
