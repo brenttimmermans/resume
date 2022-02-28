@@ -37,7 +37,7 @@ export default function Experiences() {
         }
       />
       <ExperienceItem
-        title="Elektronice-ICT - Web &amp; Mobile development @ Odisee"
+        title="Elektronica-ICT - Web &amp; Mobile development @ Odisee"
         period="2014 - 2017"
         logo={
           <CircularImage
