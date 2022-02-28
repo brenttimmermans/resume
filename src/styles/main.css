@@ -1,7 +1,13 @@
 :root {
   --color-primary: hsl(0, 91%, 71%);
+  --color-white: hsl(0, 0%, 98%);
+
+  /* Grey scale source: tailwind css Zinc */
   --color-text: hsl(240, 5%, 26%);
   --color-text-subtle: hsl(240, 4%, 46%);
+  --color-bg: var(--color-white);
+  --color-bg-transparent: hsla(0, 0%, 98%, 0);
+  --color-bg-transition: hsl(0, 0%, 94%);
 
   --font-size-XL: 32px;
   --font-size-L: 24px;
@@ -14,6 +20,34 @@
   --spacing-L: 40px;
   --spacing-M: 20px;
   --spacing-S: 10px;
+
+  --transition-bg: background-color 200ms ease;
+}
+
+:root.dark-mode {
+  --color-text: var(--color-white);
+  --color-text-subtle: hsl(240, 5%, 84%);
+  --color-bg: hsl(240, 5%, 26%);
+  --color-bg-transparent: hsla(240, 5%, 26%, 0);
+  --color-bg-transition: hsl(240, 5%, 22%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: var(--color-white);
+    --color-text-subtle: hsl(240, 5%, 84%);
+    --color-bg: hsl(240, 5%, 26%);
+    --color-bg-transparent: hsla(240, 5%, 26%, 0);
+    --color-bg-transition: hsl(240, 5%, 22%);
+  }
+
+  :root.light-mode {
+    --color-text: hsl(240, 5%, 26%);
+    --color-text-subtle: hsl(240, 4%, 46%);
+    --color-bg: var(--color-white);
+    --color-bg-transparent: hsla(0, 0%, 98%, 0);
+    --color-bg-transition: hsl(0, 0%, 94%);
+  }
 }
 
 body {
@@ -22,6 +56,7 @@ body {
   line-height: 1.4;
   font-weight: var(--font-weight-regular);
   color: var(--color-text);
+  background-color: var(--color-bg);
 }
 
 h1,

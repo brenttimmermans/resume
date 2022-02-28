@@ -6,8 +6,10 @@ import Experiences from '~/src/components/Experiences'
 import Technologies from '~/src/components/Technologies'
 import Languages from '~/src/components/Languages'
 import Contact from '~/src/components/Contact'
+import { useTheme, Theme } from '~/src/hooks/useTheme'
 
-import BgTexture from '~/src/assets/images/texture.svg'
+import BgTextureLight from '~/src/assets/images/background/light.svg'
+import BgTextureDark from '~/src/assets/images/background/dark.svg'
 
 export default function Resume() {
   return (
@@ -29,9 +31,25 @@ const CONTENT_PADDING_DESKTOP = 50
 const MIN_WIDTH_FOR_PATTERN = 940
 const BLUR_RADIUS = 20
 
-const Background = styled.div`
+const Background = ({ children }: { children: React.ReactNode }) => {
+  const { theme } = useTheme()
+
+  return theme === Theme.Dark ? (
+    <DarkBackground>{children}</DarkBackground>
+  ) : (
+    <LightBackground>{children}</LightBackground>
+  )
+}
+
+const LightBackground = styled.div`
   @media (min-width: ${MIN_WIDTH_FOR_PATTERN}px) {
-    background-image: url(${BgTexture});
+    background-image: url(${BgTextureLight});
+  }
+`
+
+const DarkBackground = styled.div`
+  @media (min-width: ${MIN_WIDTH_FOR_PATTERN}px) {
+    background-image: url(${BgTextureDark});
   }
 `
 
@@ -44,12 +62,12 @@ const Wrapper = styled.article`
   @media (min-width: ${MIN_WIDTH_FOR_PATTERN}px) {
     background: linear-gradient(
       to right,
-      hsla(0, 0%, 100%, 0) 0%,
-      hsla(0, 0%, 94%, 1) ${BLUR_RADIUS}px,
-      hsla(0, 0%, 100%, 1) ${BLUR_RADIUS}px,
-      hsla(0, 0%, 100%, 1) calc(100% - ${BLUR_RADIUS}px),
-      hsla(0, 0%, 94%, 1) calc(100% - ${BLUR_RADIUS}px),
-      hsla(0, 0%, 100%, 0) 100%
+      var(--color-bg-transparent) 0%,
+      var(--color-bg-transition) ${BLUR_RADIUS}px,
+      var(--color-bg) ${BLUR_RADIUS}px,
+      var(--color-bg) calc(100% - ${BLUR_RADIUS}px),
+      var(--color-bg-transition) calc(100% - ${BLUR_RADIUS}px),
+      var(--color-bg-transparent) 100%
     );
 
     // Add additional padding to compensate for blur
