@@ -10,14 +10,28 @@ export default function ThemeToggle() {
   const handleToggle = () => toggle()
 
   return (
-    <Icon onClick={handleToggle}>
-      {theme === Theme.Dark ? <Moon /> : <Sun />}
-    </Icon>
+    <ToggleWrapper>
+      <Icon active={theme === Theme.Dark} onClick={handleToggle}>
+        <Moon />
+      </Icon>
+      <Icon active={theme === Theme.Light} onClick={handleToggle}>
+        <Sun />
+      </Icon>
+    </ToggleWrapper>
   )
 }
 
-const Icon = styled.div`
-  max-height: 30px;
-  max-width: 30px;
+const ToggleWrapper = styled.div`
+  position: relative;
+`
+
+const Icon = styled.div<{ active: boolean }>`
+  height: 30px;
+  width: 30px;
   cursor: pointer;
+
+  position: absolute;
+
+  transition: opacity 250ms ease-in;
+  opacity: ${props => (props.active ? '1' : '0')};
 `

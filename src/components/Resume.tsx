@@ -39,27 +39,20 @@ const BLUR_RADIUS = 20
 const Background = () => {
   const { theme } = useTheme()
 
-  return theme === Theme.Dark ? <DarkBackground /> : <LightBackground />
+  const src = theme === Theme.Dark ? BgTextureDark : BgTextureLight
+  return <BaseBackground src={src} />
 }
 
-const BaseBackground = styled.div`
+const BaseBackground = styled.div<{ src: string }>`
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
-`
 
-const LightBackground = styled(BaseBackground)`
   @media (min-width: ${MIN_WIDTH_FOR_PATTERN}px) {
-    background-image: url(${BgTextureLight});
-  }
-`
-
-const DarkBackground = styled(BaseBackground)`
-  @media (min-width: ${MIN_WIDTH_FOR_PATTERN}px) {
-    background-image: url(${BgTextureDark});
+    background: url(${props => props.src});
   }
 `
 
