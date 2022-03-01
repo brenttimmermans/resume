@@ -13,47 +13,57 @@ import BgTextureDark from '~/src/assets/images/background/dark.svg'
 
 export default function Resume() {
   return (
-    <Background>
-      <Wrapper>
+    <Wrapper>
+      <Content>
         <Header />
         <AboutMe />
         <Experiences />
         <Technologies />
         <Languages />
         <Contact />
-      </Wrapper>
-    </Background>
+      </Content>
+      <Background />
+    </Wrapper>
   )
 }
+
+const Wrapper = styled.div`
+  position: relative;
+`
 
 const CONTENT_PADDING_MOBILE = 30
 const CONTENT_PADDING_DESKTOP = 50
 const MIN_WIDTH_FOR_PATTERN = 940
 const BLUR_RADIUS = 20
 
-const Background = ({ children }: { children: React.ReactNode }) => {
+const Background = () => {
   const { theme } = useTheme()
 
-  return theme === Theme.Dark ? (
-    <DarkBackground>{children}</DarkBackground>
-  ) : (
-    <LightBackground>{children}</LightBackground>
-  )
+  return theme === Theme.Dark ? <DarkBackground /> : <LightBackground />
 }
 
-const LightBackground = styled.div`
+const BaseBackground = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+`
+
+const LightBackground = styled(BaseBackground)`
   @media (min-width: ${MIN_WIDTH_FOR_PATTERN}px) {
     background-image: url(${BgTextureLight});
   }
 `
 
-const DarkBackground = styled.div`
+const DarkBackground = styled(BaseBackground)`
   @media (min-width: ${MIN_WIDTH_FOR_PATTERN}px) {
     background-image: url(${BgTextureDark});
   }
 `
 
-const Wrapper = styled.article`
+const Content = styled.article`
   max-width: 720px;
   margin: 0 auto;
   padding: 70px ${CONTENT_PADDING_MOBILE}px;
