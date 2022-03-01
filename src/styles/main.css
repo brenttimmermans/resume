@@ -21,7 +21,7 @@
   --spacing-M: 20px;
   --spacing-S: 10px;
 
-  --transition-bg: background-color 200ms ease;
+  --transition-bg: background-color 250ms ease;
 }
 
 :root.dark-mode {
