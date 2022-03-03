@@ -19,7 +19,7 @@ export default function Header() {
       <CircularImage
         src={ProfilePicture}
         alt="Profile picture of Brent"
-        size={140}
+        size={150}
         css={css`
           margin-bottom: 70px;
         `}
