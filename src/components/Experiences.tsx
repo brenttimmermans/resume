@@ -2,8 +2,9 @@ import { css } from '@emotion/react'
 import styled from 'styled-components'
 
 import { H2, H3, Subtle } from '~/src/components/Common/Text'
-import { Image, CircularImage } from '~/src/components/Common/Image'
+import { CircularImage } from '~/src/components/Common/Image'
 
+import CheqroomLogo from '~/src/assets/images/companies/cheqroom.png'
 import WaylayLogo from '~/src/assets/images/companies/waylay.png'
 import SmallTownHeroesLogo from '~/src/assets/images/companies/smalltownheroes.png'
 import OdiseeLogo from '~/src/assets/images/companies/odisee.png'
@@ -17,8 +18,20 @@ export default function Experiences() {
     <Wrapper>
       <H2>Experiences</H2>
       <ExperienceItem
+        title="Fullstack JavaScript Developer @ Cheqroom"
+        period="May 2022 - Present"
+        logo={
+          <CustomIcon
+            src={CheqroomLogo}
+            alt="Cheqroom company logo"
+            size={ICON_SIZE}
+            theme={theme}
+          />
+        }
+      />
+      <ExperienceItem
         title="Fullstack JavaScript Developer @ Waylay"
-        period="September 2017 - Present"
+        period="September 2017 - May 2022"
         logo={
           <CustomIcon
             src={WaylayLogo}
