@@ -7,7 +7,7 @@ import Socials from '~/src/components/Common/Socials'
 import { InstagramLink } from '~/src/util/links'
 import ThemeToggle from '~/src/components/Common/ThemeToggle'
 
-import ProfilePicture from '~/src/assets/images/profile.jpeg'
+import ProfilePicture from '~/src/assets/images/profile.jpg'
 import WaveEmoji from '~/src/assets/images/wave.png'
 
 export default function Header() {
@@ -19,7 +19,7 @@ export default function Header() {
       <CircularImage
         src={ProfilePicture}
         alt="Profile picture of Brent"
-        size={150}
+        size={200}
         css={css`
           margin-bottom: 70px;
         `}
