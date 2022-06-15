@@ -1,15 +1,14 @@
 import styled from 'styled-components'
 
-import Header from '~/src/components/Header'
-import AboutMe from '~/src/components/AboutMe'
-import Experiences from '~/src/components/Experiences'
-import Technologies from '~/src/components/Technologies'
-import Languages from '~/src/components/Languages'
-import Contact from '~/src/components/Contact'
-import { useTheme, Theme } from '~/src/hooks/useTheme'
-
-import BgTextureLight from '~/src/assets/images/background/light.svg'
 import BgTextureDark from '~/src/assets/images/background/dark.svg'
+import BgTextureLight from '~/src/assets/images/background/light.svg'
+import AboutMe from '~/src/components/AboutMe'
+import Contact from '~/src/components/Contact'
+import Experiences from '~/src/components/Experiences'
+import Header from '~/src/components/Header'
+import Languages from '~/src/components/Languages'
+import Technologies from '~/src/components/Technologies'
+import { Theme, useTheme } from '~/src/hooks/useTheme'
 
 export default function Resume() {
   return (

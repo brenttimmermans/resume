@@ -1,14 +1,13 @@
-import styled from 'styled-components'
 import { css } from '@emotion/react'
-
-import { H1, TextLink } from '~/src/components/Common/Text'
-import { Image, CircularImage } from '~/src/components/Common/Image'
-import Socials from '~/src/components/Common/Socials'
-import { InstagramLink } from '~/src/util/links'
-import ThemeToggle from '~/src/components/Common/ThemeToggle'
+import styled from 'styled-components'
 
 import ProfilePicture from '~/src/assets/images/profile.jpg'
 import WaveEmoji from '~/src/assets/images/wave.png'
+import { CircularImage, Image } from '~/src/components/Common/Image'
+import Socials from '~/src/components/Common/Socials'
+import { H1, TextLink } from '~/src/components/Common/Text'
+import ThemeToggle from '~/src/components/Common/ThemeToggle'
+import { InstagramLink } from '~/src/util/links'
 
 export default function Header() {
   return (

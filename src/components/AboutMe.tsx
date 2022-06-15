@@ -1,6 +1,6 @@
 import { css } from '@emotion/react'
 
-import { H2, Bold } from '~/src/components/Common/Text'
+import { Bold, H2 } from '~/src/components/Common/Text'
 
 export default function AboutMe() {
   return (
