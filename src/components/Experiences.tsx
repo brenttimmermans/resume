@@ -1,13 +1,12 @@
 import { css } from '@emotion/react'
 import styled from 'styled-components'
 
-import { H2, H3, Subtle } from '~/src/components/Common/Text'
-import { CircularImage } from '~/src/components/Common/Image'
-
 import CheqroomLogo from '~/src/assets/images/companies/cheqroom.png'
-import WaylayLogo from '~/src/assets/images/companies/waylay.png'
-import SmallTownHeroesLogo from '~/src/assets/images/companies/smalltownheroes.png'
 import OdiseeLogo from '~/src/assets/images/companies/odisee.png'
+import SmallTownHeroesLogo from '~/src/assets/images/companies/smalltownheroes.png'
+import WaylayLogo from '~/src/assets/images/companies/waylay.png'
+import { CircularImage } from '~/src/components/Common/Image'
+import { H2, H3, Subtle } from '~/src/components/Common/Text'
 import { Theme, useTheme } from '../hooks/useTheme'
 
 const ICON_SIZE = 40
