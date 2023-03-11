@@ -1,7 +1,7 @@
 {
   "extends": "@parcel/config-default",
   "transformers": {
-    "{github,twitter,linkedin,sun,moon}.svg": [
+    "{github,linkedin,sun,moon}.svg": [
       "...",
       "@parcel/transformer-svg-react"
     ]

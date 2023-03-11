@@ -1,10 +1,9 @@
 import styled from 'styled-components'
 
-import { GithubLink, LinkedinLink, TwitterLink } from '~/src/util/links'
+import { GithubLink, LinkedinLink } from '~/src/util/links'
 
 import GithubLogo from '~/src/assets/images/socials/github.svg'
 import LinkedinLogo from '~/src/assets/images/socials/linkedin.svg'
-import TwitterLogo from '~/src/assets/images/socials/twitter.svg'
 
 export default function Socials() {
   return (
@@ -14,9 +13,6 @@ export default function Socials() {
       </StyledLink>
       <StyledLink href={LinkedinLink}>
         <LinkedinLogo />
-      </StyledLink>
-      <StyledLink href={TwitterLink}>
-        <TwitterLogo />
       </StyledLink>
     </Wrapper>
   )
