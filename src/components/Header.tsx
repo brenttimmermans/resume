@@ -20,34 +20,33 @@ export default function Header() {
         alt="Profile picture of Brent"
         size={200}
         css={css`
-          margin-bottom: 70px;
+          margin-bottom: var(--spacing-L);
         `}
       />
-      <TextWrapper>
-        <div
+      <div
+        css={css`
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          margin-bottom: var(--spacing-L);
+        `}
+      >
+        <H1>Hi! I&apos;m Brent&nbsp;Timmermans</H1>
+        <Image
+          src={WaveEmoji}
+          alt="Waving hand emoji"
+          size={40}
           css={css`
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
+            margin-left: var(--spacing-S);
           `}
-        >
-          <H1>Hi! I&apos;m Brent&nbsp;Timmermans</H1>
-          <Image
-            src={WaveEmoji}
-            alt="Waving hand emoji"
-            size={40}
-            css={css`
-              margin-left: var(--spacing-S);
-            `}
-          />
-        </div>
-        <p>
-          Developer · <TextLink href={InstagramLink}>Photographer</TextLink> ·
-          Runner
-        </p>
-        <Socials />
-      </TextWrapper>
+        />
+      </div>
+      <p>
+        Developer · <TextLink href={InstagramLink}>Photographer</TextLink> ·
+        Runner
+      </p>
+      <Socials />
     </Wrapper>
   )
 }
@@ -63,10 +62,4 @@ const ThemeToggleWrapper = styled.section`
   right: -10px;
   width: 30px;
   height: auto;
-`
-
-const TextWrapper = styled.div`
-  > * + * {
-    margin-top: var(--spacing-L);
-  }
 `
