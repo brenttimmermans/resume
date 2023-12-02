@@ -18,7 +18,7 @@ export default function Experiences() {
       <H2>Experiences</H2>
       <ExperienceItem
         title="Fullstack JavaScript Developer @ Cheqroom"
-        period="May 2022 - Present"
+        period="May 2022 - November 2023"
         logo={
           <CustomIcon
             src={CheqroomLogo}
