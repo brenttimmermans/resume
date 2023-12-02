@@ -19,7 +19,7 @@ export default function Technologies() {
       <p>
         Furthermore I have professional experience using/working with{' '}
         <Bold>Git</Bold>, <Bold>CI/CD</Bold>, <Bold>Figma</Bold>,{' '}
-        <Bold>code testing</Bold>, <Bold>npm</Bold> &amp;{' '}
+        <Bold>code testing</Bold>, <Bold>yarn/npm</Bold> &amp;{' '}
         <Bold>a variety of SQL/NoSQL databases</Bold>.
       </p>
     </article>
