@@ -10,8 +10,6 @@ export default function AboutMe() {
       <H2>About me</H2>
 
       <p>
-        Let&apos;s keep things short.
-        <br />
         I&apos;m a <Bold>organised</Bold>, <Bold>trustworthy</Bold> and{' '}
         <Bold>positive minded</Bold> Full-Stack Developer.
         <br />
