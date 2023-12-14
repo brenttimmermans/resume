@@ -43,7 +43,7 @@ export default function Header() {
         />
       </div>
       <p>
-        Developer · <TextLink href={InstagramLink}>Photographer</TextLink> ·
+        Web Dev · <TextLink href={InstagramLink}>Photographer</TextLink> ·
         Runner
       </p>
       <Socials />
