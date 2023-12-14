@@ -32,7 +32,7 @@ export default function Header() {
           margin-bottom: var(--spacing-L);
         `}
       >
-        <H1>Hi! I&apos;m Brent&nbsp;Timmermans</H1>
+        <H1>Hi! I&apos;m Brent</H1>
         <Image
           src={WaveEmoji}
           alt="Waving hand emoji"
