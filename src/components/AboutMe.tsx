@@ -10,7 +10,7 @@ export default function AboutMe() {
       <H2>About me</H2>
 
       <p>
-        I&apos;m a <Bold>organised</Bold>, <Bold>trustworthy</Bold> and{' '}
+        I&apos;m an <Bold>organised</Bold>, <Bold>trustworthy</Bold> and{' '}
         <Bold>positive minded</Bold> Full-Stack Developer.
         <br />
         <Bold>Running</Bold> in and around <Bold>Gent</Bold> a couple times a
