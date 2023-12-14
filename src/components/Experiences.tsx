@@ -2,6 +2,7 @@ import { css } from '@emotion/react'
 import styled from 'styled-components'
 
 import CheqroomLogo from '~/src/assets/images/companies/cheqroom.png'
+import DeveloperLogo from '~/src/assets/images/companies/developer.png'
 import OdiseeLogo from '~/src/assets/images/companies/odisee.png'
 import SmallTownHeroesLogo from '~/src/assets/images/companies/smalltownheroes.png'
 import WaylayLogo from '~/src/assets/images/companies/waylay.png'
@@ -16,6 +17,18 @@ export default function Experiences() {
   return (
     <Wrapper>
       <H2>Experiences</H2>
+      <ExperienceItem
+        title="Want to start the the new year together?"
+        period="January 2024 - ..."
+        logo={
+          <CustomIcon
+            src={DeveloperLogo}
+            alt="Developer emoji"
+            size={ICON_SIZE}
+            theme={theme}
+          />
+        }
+      />
       <ExperienceItem
         title="Fullstack JavaScript Developer @ Cheqroom"
         period="May 2022 - November 2023"
