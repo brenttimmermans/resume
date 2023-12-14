@@ -2,14 +2,18 @@ import { css } from '@emotion/react'
 
 import { Bold, H2 } from '~/src/components/Common/Text'
 
+// organised, trustworthy, postive
+
 export default function AboutMe() {
   return (
     <article>
       <H2>About me</H2>
+
       <p>
-        Motivated <Bold>web developer</Bold> with a passion for{' '}
-        <Bold>frontend developement</Bold>, <Bold>UX</Bold> &amp;{' '}
-        <Bold>design</Bold>.
+        Let&apos;s keep things short.
+        <br />
+        I&apos;m a <Bold>organised</Bold>, <Bold>trustworthy</Bold> and{' '}
+        <Bold>positive minded</Bold> Full-Stack Developer.
         <br />
         <Bold>Running</Bold> in and around <Bold>Gent</Bold> a couple times a
         week.
@@ -26,11 +30,12 @@ export default function AboutMe() {
         ~
       </p>
       <p>
-        <Bold>Problem-solving team player</Bold>. <Bold>Eager to learn</Bold> on
-        a daily basis from <Bold>peers &amp; mentors</Bold>, keeping myself{' '}
-        <Bold>up to date</Bold> with the latest advancements on the web. Working
-        with <Bold>dedication</Bold>, <Bold>structure</Bold> and{' '}
-        <Bold>efficiency</Bold> towards my goals.
+        <Bold>Problem-solving team player</Bold> with a great{' '}
+        <Bold>eye for detail</Bold>.
+        <br />
+        <Bold>Eager to learn</Bold> from <Bold>peers &amp; mentors</Bold>,
+        keeping myself <Bold>up to date</Bold> with the latest advancements on
+        the web.
       </p>
     </article>
   )
