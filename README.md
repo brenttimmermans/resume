@@ -1,5 +1,7 @@
 # Hi 👋, I'm Brent !
 
+<img src="assets/screenshot.png" alt="A screenshot of the Roycuotes website" />
+
 ## Sources
 
 ### Background texture
