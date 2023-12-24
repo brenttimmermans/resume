@@ -7,7 +7,7 @@ import { CircularImage, Image } from '~/src/components/Common/Image'
 import Socials from '~/src/components/Common/Socials'
 import { H1, TextLink } from '~/src/components/Common/Text'
 import ThemeToggle from '~/src/components/Common/ThemeToggle'
-import { InstagramLink } from '~/src/util/links'
+import { PhotographyLink } from '~/src/util/links'
 
 export default function Header() {
   return (
@@ -43,7 +43,7 @@ export default function Header() {
         />
       </div>
       <p>
-        Web Dev · <TextLink href={InstagramLink}>Photographer</TextLink> ·
+        Web Dev · <TextLink href={PhotographyLink}>Photographer</TextLink> ·
         Runner
       </p>
       <Socials />
