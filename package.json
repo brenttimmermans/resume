@@ -2,7 +2,7 @@
   "name": "resume",
   "version": "0.1.0",
   "description": "Hi 👋, I'm Brent and this is my resume!",
-  "author": "Brent-T <brenttimmermans7@gmail.com>",
+  "author": "brenttimmermans <brenttimmermans7@gmail.com>",
   "license": "ISC",
   "source": "src/index.html",
   "scripts": {
