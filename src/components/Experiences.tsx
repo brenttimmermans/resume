@@ -1,6 +1,7 @@
 import { css } from '@emotion/react'
 import styled from 'styled-components'
 
+import WhaleLogo from '~/src/assets/images/companies/whale.png'
 import CheqroomLogo from '~/src/assets/images/companies/cheqroom.png'
 import DeveloperLogo from '~/src/assets/images/companies/developer.png'
 import OdiseeLogo from '~/src/assets/images/companies/odisee.png'
@@ -32,6 +33,18 @@ export default function Experiences() {
           }
         />
       )}
+      <ExperienceItem
+        title="Frontend Developer @ Whale"
+        period="February 2024 - Present"
+        logo={
+          <CustomIcon
+            src={WhaleLogo}
+            alt="Whale company logo"
+            size={ICON_SIZE}
+            theme={theme}
+          />
+        }
+      />
       <ExperienceItem
         title="Fullstack JavaScript Developer @ Cheqroom"
         period="May 2022 - November 2023"
