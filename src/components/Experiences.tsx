@@ -11,24 +11,27 @@ import { H2, H3, Subtle } from '~/src/components/Common/Text'
 import { Theme, useTheme } from '../hooks/useTheme'
 
 const ICON_SIZE = 40
+const OPEN_FOR_WORK = false
 
 export default function Experiences() {
   const { theme } = useTheme()
   return (
     <Wrapper>
       <H2>Experiences</H2>
-      <ExperienceItem
-        title="Want to start the the new year together?"
-        period="January 2024 - ..."
-        logo={
-          <CustomIcon
-            src={DeveloperLogo}
-            alt="Developer emoji"
-            size={ICON_SIZE}
-            theme={theme}
-          />
-        }
-      />
+      {OPEN_FOR_WORK && (
+        <ExperienceItem
+          title="Want to start the the new year together?"
+          period="January 202x - ..."
+          logo={
+            <CustomIcon
+              src={DeveloperLogo}
+              alt="Developer emoji"
+              size={ICON_SIZE}
+              theme={theme}
+            />
+          }
+        />
+      )}
       <ExperienceItem
         title="Fullstack JavaScript Developer @ Cheqroom"
         period="May 2022 - November 2023"
