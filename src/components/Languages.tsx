@@ -65,7 +65,7 @@ enum CEFR_Level {
 interface ILanguageItemProps {
   language: Language
   level: CEFR_Level
-  icon: React.ReactNode
+  icon: JSX.Element
 }
 
 const LanguageItem = ({ language, level, icon }: ILanguageItemProps) => (

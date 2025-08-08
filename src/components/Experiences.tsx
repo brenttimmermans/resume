@@ -124,7 +124,7 @@ const CustomIcon = styled(CircularImage)`
 interface IExperienceItemProps {
   title: string
   period: string
-  logo: React.ReactNode
+  logo: JSX.Element
 }
 
 const ExperienceItem = ({ title, period, logo }: IExperienceItemProps) => (
